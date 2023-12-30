@@ -12,7 +12,7 @@ EOF
 #./setJupyterpw.exp
 #
 # start:
-# nohup jupyter notebook --no-browser --port=8889 --ip=0.0.0.0 &
+# nohup jupyter notebook --no-browser --port=8888 --ip=0.0.0.0 &
 #
 # https://github.com/Mohdwajtech/Complete-Python-3-Bootcamp.git
 # git clone https://github.com/Bh67tablet/Complete-Python-3-Bootcamp.git
