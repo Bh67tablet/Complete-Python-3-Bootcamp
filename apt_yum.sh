@@ -19,7 +19,9 @@ install_ubuntu() {
 install_centos() {
 	sudo yum -y update
 	sudo yum -y install unzip
+ 	sudo yum -y install bzip2
 	sudo yum -y install git
+ 	sudo yum -y install expect
 	sudo wget https://releases.hashicorp.com/terraform/1.6.3/terraform_1.6.3_linux_amd64.zip
 	sudo unzip terraform_1.6.3_linux_amd64.zip
 	sudo mv terraform /usr/bin
