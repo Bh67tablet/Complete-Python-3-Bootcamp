@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 cat > /home/ubuntu/reload_bash_shell.sh << EOF
 if [ ! -f /home/ubuntu/resume-after-reboot ]
 then
