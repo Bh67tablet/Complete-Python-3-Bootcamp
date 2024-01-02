@@ -14,5 +14,5 @@ nohup jupyter notebook --no-browser --port=8888 --ip=0.0.0.0 &
 EOF
 sudo chown ec2-user:ec2-user /home/ec2-user/Complete-Python-3-Bootcamp/install_jp.sh
 sudo chmod u+x /home/ec2-user/Complete-Python-3-Bootcamp/install_jp.sh
-#sudo su - -c 'su - ec2-user -c "source ~/.bashrc & cd /home/ec2-user/Complete-Python-3-Bootcamp & pwd & ./install_jp.sh"'
-sudo su - -c 'su - ec2-user -c "source ~/.bashrc & /home/ec2-user/Complete-Python-3-Bootcamp/install_jp.sh"'
+sudo su - -c 'su - ec2-user -c "source ~/.bashrc & cd /home/ec2-user/Complete-Python-3-Bootcamp & pwd & ./install_jp.sh"'
+#sudo su - -c 'su - ec2-user -c "source ~/.bashrc & /home/ec2-user/Complete-Python-3-Bootcamp/install_jp.sh"'
