@@ -4,6 +4,7 @@ sudo yum -y install git
 sudo su - -c 'su - ec2-user -c "echo PATH=$PATH:/home/ec2-user/anaconda3/bin >> ~/.bash_profile"'
 #sudo su - -c 'su - ec2-user -c "source ~/.bashrc"'
 cat > /home/ec2-user/install_jp.sh << EOF
+#/bin/bash!
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 bash Anaconda3-2023.09-0-Linux-x86_64.sh -b
 git clone https://github.com/Bh67tablet/Complete-Python-3-Bootcamp.git
