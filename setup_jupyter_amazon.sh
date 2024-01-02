@@ -15,4 +15,4 @@ cat nohup.out
 EOF
 sudo chown ec2-user:ec2-user /home/ec2-user/install_jp.sh
 sudo chmod u+x /home/ec2-user/install_jp.sh
-sudo su - -c 'su - ec2-user -c "source ~/.bash_profile & install_jp.sh"'
+sudo su - -c 'su - ec2-user -c "source ~/.bashrc & install_jp.sh"'
