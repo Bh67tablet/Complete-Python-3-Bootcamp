@@ -1,8 +1,8 @@
 #/bin/bash!
 sudo yum -y install bzip2
 sudo yum -y install git
-sudo su - -c 'su - ec2-user -c "echo PATH=$PATH:/home/ec2-user/anaconda3/bin >> ~/.bashrc"'
-sudo su - -c 'su - ec2-user -c "source ~/.bashrc"'
+sudo su - -c 'su - ec2-user -c "echo PATH=$PATH:/home/ec2-user/anaconda3/bin >> ~/.bash_profile"'
+#sudo su - -c 'su - ec2-user -c "source ~/.bashrc"'
 cat > /home/ec2-user/install_jp.sh << EOF
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 bash Anaconda3-2023.09-0-Linux-x86_64.sh -b
@@ -15,4 +15,4 @@ cat nohup.out
 EOF
 sudo chown ec2-user:ec2-user /home/ec2-user/install_jp.sh
 sudo chmod u+x /home/ec2-user/install_jp.sh
-sudo su - -c 'su - ec2-user -c "install_jp.sh"'
+sudo su - -c 'su - ec2-user -c "source ~/.bash_profile & install_jp.sh"'
